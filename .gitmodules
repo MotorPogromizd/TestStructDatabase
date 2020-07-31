@@ -1,0 +1,6 @@
+[submodule "StructDatabaseProject/QtStructDatabase"]
+	path = StructDatabaseProject/QtStructDatabase
+	url = https://github.com/RomandzeRoman/QtStructDatabase.git
+[submodule "StructDatabaseProject/QtDebugPrint"]
+	path = StructDatabaseProject/QtDebugPrint
+	url = https://github.com/MotorPogromizd/QtDebugPrint.git
