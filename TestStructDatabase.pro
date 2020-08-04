@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    CommonDatabaseProject \
-    TestCasesCommonDatabase
- OTHER_FILES += \
-    TestCommonDatabase.dox
+    StructDatabaseProject \
+    TestCasesStructDatabase
+
+OTHER_FILES += README.md

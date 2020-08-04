@@ -36,7 +36,7 @@ ApplicationWindow {
             anchors.fill: parent
 
             ItemDelegate {
-                text: qsTr("Page 1")
+                text: qsTr("Plain database")
                 width: parent.width
                 onClicked: {
                     stackView.currentIndex = 0;
@@ -44,7 +44,7 @@ ApplicationWindow {
                 }
             }
             ItemDelegate {
-                text: qsTr("Page 2")
+                text: qsTr("Event database")
                 width: parent.width
                 onClicked: {
                     stackView.currentIndex = 1;
@@ -59,19 +59,27 @@ ApplicationWindow {
     StackLayout {
         id: stackView
         anchors.fill: parent
+        currentIndex: 1
         ListView {
             id: listView
             model: databaseModel
 
             delegate: Label {
+                padding: 3
+                width: ListView.view.width
                 text: index + ": "
                       + date.toLocaleString(
                             Qt.locale("ru_RU"),
                             "HH:mm:ss.zzz"
                             )
                       + ": " + message
+
+                background: Rectangle {
+                    height: 1
+                    color: "lightgray"
+                    anchors.bottom: parent.bottom
+                }
             }
-            //anchors.fill: parent
         }
         EventDatabaseView {
 

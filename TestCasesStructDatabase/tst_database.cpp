@@ -1,7 +1,7 @@
 #include "tst_database.h"
 
-#include "CommonDatabase/database.h"
-#include "DebugOutput/debugoutput.h"
+#include "../StructDatabaseProject/QtStructDatabase/database.h"
+#include "../StructDatabaseProject/QtDebugPrint/debugoutput.h"
 
 const QString dbFileName = "aTestDb.db";
 const QString connectionName = "db";

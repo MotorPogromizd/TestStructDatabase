@@ -3,8 +3,7 @@
 #include "tst_benchdatabase.h"
 #include "tst_testmultitabledatabase.h"
 
-//#include "../../TestCommonDatabase/CommonDatabaseProject/DebugOutput/debugoutput.h"
-#include "../CommonDatabaseProject/DebugOutput/debugoutput.h"
+#include <QtDebugPrint/debugoutput.h>
 
 int main(int argc, char *argv[])
 {

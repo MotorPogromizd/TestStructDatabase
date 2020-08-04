@@ -2,17 +2,19 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
-
 #include <tuple>
 #include <utility>
 #include <type_traits>
-#include "DebugOutput/debugoutput.h"
 
-#include "CommonDatabase/database.h"
-#include "CommonDatabase/TupleConversions/structconversions.h"
 
-#include "CommonDatabase/databaseviewmodel.h"
-#include "CommonDatabase/eventdatabase.h"
+#include "QtStructDatabase/database.h"
+#include "QtStructDatabase/QtTupleConversions/structconversions.h"
+
+#include "QtStructDatabase/databaseviewmodel.h"
+#include "QtStructDatabase/eventdatabase.h"
+
+
+#include "QtDebugPrint/debugoutput.h"
 
 struct TestStructMain {
     //QDateTime time;
@@ -181,7 +183,7 @@ int main(int argc, char *argv[])
                      [&eventDatabase]() {
         for (int i = 0; i < 1000; ++i) {
             TestStructMain s {
-                int(i),//QDateTime::currentDateTime(),
+                double(i),//QDateTime::currentDateTime(),
                 QString("test message: ") + QDateTime::currentDateTime().toString("HH:mm:ss.zzz")
             };
             eventDatabase.addRecord(s);

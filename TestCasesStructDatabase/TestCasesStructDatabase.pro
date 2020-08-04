@@ -6,6 +6,9 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
+include(../StructDatabaseProject/QtDebugPrint/QtDebugPrint.pri)
+include(../StructDatabaseProject/QtStructDatabase/QtStructDatabase.pri)
+
 SOURCES += \ 
     main.cpp \
     tst_database.cpp \
@@ -13,7 +16,7 @@ SOURCES += \
     tst_benchdatabase.cpp \
     tst_testmultitabledatabase.cpp
 
-INCLUDEPATH += ../CommonDatabaseProject
+#INCLUDEPATH += ../CommonDatabaseProject
 
 HEADERS += \
     tst_database.h \

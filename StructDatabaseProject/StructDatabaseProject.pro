@@ -3,8 +3,8 @@ QT += core quick
 
 CONFIG += c++1z warn_on
 
-include(CommonDatabase/CommonDatabase.pri)
-include(DebugOutput/DebugOutput.pri)
+include(QtStructDatabase/QtStructDatabase.pri)
+include(QtDebugPrint/QtDebugPrint.pri)
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings

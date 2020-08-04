@@ -1,6 +1,6 @@
 #include "tst_databasedetail.h"
 
-#include "CommonDatabase/database_detail.h"
+#include "../StructDatabaseProject/QtStructDatabase/database_detail.h"
 
 
 void TestDatabaseDetail::testTableName() {

@@ -1,6 +1,7 @@
 #include "tst_testmultitabledatabase.h"
 
-#include "CommonDatabase/database.h"
+#include "../StructDatabaseProject/QtStructDatabase/database.h"
+#include "../StructDatabaseProject/QtDebugPrint/debugoutput.h"
 
 const QString dbFileName = "aTestDb.db";
 const QString connectionName = "db";
@@ -12,7 +13,6 @@ void TestMultitableDatabase::removeDb() {
     // NOTE now not deleted
     bool success = db.remove();
     dbg << "base removed" << success;
-
 }
 
 void TestMultitableDatabase::initTestCase() {
