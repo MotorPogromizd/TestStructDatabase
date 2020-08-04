@@ -37,7 +37,6 @@ GridLayout {
             bottomPadding: 4
             onClicked: {
                 eventDatabase.selectActivation(index);
-                console.log('clicked')
             }
             contentItem: ColumnLayout {
                 Label {
